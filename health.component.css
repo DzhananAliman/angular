@@ -1,0 +1,17 @@
+#wrapper {
+    border: 1px solid black;
+    width: 90%;
+    height: 200px;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 20px;
+    background-color: rgb(223, 154, 213);
+}
+
+Img {
+    width: 360px;
+    height: 220px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgb(236, 182, 231);
+}

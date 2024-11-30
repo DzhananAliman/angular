@@ -1,0 +1,18 @@
+<div>
+  <h2>Registration Form</h2>
+  <form (submit)="onSubmit($event)">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" #emailInput required />
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" #passwordInput required />
+    
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" #confirmPasswordInput required />
+    
+    <button type="submit">Register</button>
+  </form>
+</div>
+
+  
+  

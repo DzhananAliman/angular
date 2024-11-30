@@ -1,0 +1,32 @@
+
+<div *ngIf="localStorage.getItem('token')">
+    <h2>Your Comments</h2>
+    
+   
+    <div>
+      <textarea [(ngModel)]="newComment" placeholder="Write a comment..."></textarea>
+      <button (click)="addComment()">Add Comment</button>
+    </div>
+  
+ 
+    <div *ngIf="comments.length === 0">No comments yet.</div>
+  
+    <ul>
+      <li *ngFor="let comment of comments; let i = index">
+        <div>
+          <span>{{ comment }}</span>
+          <button (click)="editComment(i)">Edit</button>
+          <button (click)="deleteComment(i)">Delete</button>
+        </div>
+      </li>
+    </ul>
+  
+   
+    <button (click)="onLogout()">Logout</button>
+  </div>
+  
+
+  <div *ngIf="!localStorage.getItem('token')">
+    <p>You must be logged in to view and write comments.</p>
+  </div>
+  
